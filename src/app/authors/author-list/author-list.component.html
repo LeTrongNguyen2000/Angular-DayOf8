@@ -1,0 +1,8 @@
+<li>
+    <ul>
+        <author-details *ngFor="let author of authors" [author]="author" (select)="onSelected($event)"
+        (delete)="onDeleted($event)"></author-details>
+    </ul>
+    <!-- Trong hàm onSelected lại gắn thêm even -->
+</li>
+<div>Selected author: {{currentAuthor.name}}</div>
